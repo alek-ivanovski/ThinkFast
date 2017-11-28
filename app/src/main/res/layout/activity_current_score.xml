@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_current_score"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="hyperic.thinkfast.CurrentScore"
+    android:background="#5B5B5B">
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ScoreValue"
+        android:textSize="30sp"
+        android:textColor="#3292E8"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/ScoreText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/score_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:id="@+id/ScoreText"
+        android:fontFamily="monospace"
+        android:textSize="36sp"
+        android:textColor="#3292E8"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="@string/main_menu_txt"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:id="@+id/MainMenuButton"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/PlayAgain"
+        android:layout_alignRight="@+id/PlayAgain"
+        android:layout_alignEnd="@+id/PlayAgain"
+        android:background="#FFD741"
+        android:textColor="#5B5B5B" />
+
+    <Button
+        android:text="@string/play_again_txt"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="55dp"
+        android:id="@+id/PlayAgain"
+        android:layout_below="@+id/HighScore"
+        android:layout_centerHorizontal="true"
+        android:background="#FFD741"
+        android:textColor="#5B5B5B" />
+
+    <TextView
+        android:text="@string/highscore_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/HighscoreText"
+        android:textSize="18sp"
+        android:textColor="#3292E8"
+        android:fontFamily="monospace"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ScoreValue"
+        android:layout_alignLeft="@+id/ScoreText"
+        android:layout_alignStart="@+id/ScoreText"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp" />
+
+    <TextView
+        android:text="00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/HighScore"
+        android:fontFamily="monospace"
+        android:textSize="18sp"
+        android:textColor="#3292E8"
+        android:layout_alignBaseline="@+id/HighscoreText"
+        android:layout_alignBottom="@+id/HighscoreText"
+        android:layout_alignRight="@+id/PlayAgain"
+        android:layout_alignEnd="@+id/PlayAgain" />
+
+</RelativeLayout>

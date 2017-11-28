@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Think Fast!</string>
+    <string name="how_to_txt">How to play</string>
+    <string name="play">Play</string>
+    <string name="score_txt">Game Over</string>
+    <string name="highscore_txt">Highscore:</string>
+    <string name="play_again_txt">Try Again</string>
+    <string name="main_menu_txt">Main Menu</string>
+    <string name="quit_txt">Quit</string>
+    <string name="question">Is the statement correct?</string>
+</resources>
